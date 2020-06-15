@@ -1,3 +1,8 @@
+<?php
+require_once('class.php');
+require_once('connection.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +30,10 @@
   switch ($req) {
     case 'login':
       require_once('login.php');
+      break;
+      
+    case 'reg':
+      require_once('sign_up.php');
       break;
       
     case 'home':
